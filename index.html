@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROB UNITY POWER – Growth Engine v3</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="logo">🎯</div>
+  <div class="hinfo">
+    <h1>ROB UNITY POWER</h1>
+    <p>⚡ YouTube Growth Engine v3.0</p>
+  </div>
+  <div class="hbadge"><div class="dot"></div>AI LIVE</div>
+</header>
+
+<div class="nav-wrap">
+  <div class="nav-tabs" id="navTabs">
+    <button class="tab active" onclick="go('home')"><span class="ti">🏠</span>Home</button>
+    <button class="tab" onclick="go('studio')"><span class="ti">📊</span>Channel Studio</button>
+    <button class="tab" onclick="go('vidlink')"><span class="ti">🔗</span>Video Link Analyzer</button>
+    <button class="tab" onclick="go('views')"><span class="ti">📈</span>Daily Views</button>
+    <button class="tab" onclick="go('analyzer')"><span class="ti">🔍</span>Video Analyzer</button>
+    <button class="tab" onclick="go('tags')"><span class="ti">🏷️</span>Tags & SEO</button>
+    <button class="tab" onclick="go('thumb')"><span class="ti">🖼️</span>Thumbnail</button>
+    <button class="tab" onclick="go('revenue')"><span class="ti">💰</span>Revenue</button>
+    <button class="tab" onclick="go('viral')"><span class="ti">🚀</span>Go Viral</button>
+    <button class="tab" onclick="go('p1')"><span class="ti">🎯</span>Niche</button>
+    <button class="tab" onclick="go('p2')"><span class="ti">💡</span>30 Ideas</button>
+    <button class="tab" onclick="go('p5')"><span class="ti">🕵️</span>Competitors</button>
+    <button class="tab" onclick="go('p6')"><span class="ti">🔬</span>Channel Audit</button>
+  </div>
+</div>
+
+<main>
+
+<!-- HOME -->
+<section id="home" class="sec active">
+  <div class="hero">
+    <h2>GROW <em>ROB UNITY</em> <b>POWER</b></h2>
+    <p>Complete AI-powered YouTube growth hub. Analyze videos, boost views, create thumbnails, maximize revenue and go viral.</p>
+    <a href="https://youtube.com/@sniperrob007" target="_blank" class="clink">▶ @sniperrob007</a>
+  </div>
+  <div class="grid3">
+    <div class="pcard" style="--accent:#FFD700" onclick="go('studio')"><div class="ci">📊</div><div class="new-badge">NEW</div><div class="ct">Channel Studio</div><div class="cd">YT Studio style dashboard — all your video & Shorts views in one place with growth suggestions.</div></div>
+    <div class="pcard" style="--accent:#00AAFF" onclick="go('vidlink')"><div class="ci">🔗</div><div class="new-badge">NEW</div><div class="ct">Video Link Analyzer</div><div class="cd">Paste any YouTube video link — get full analysis, viral keywords, description & SEO boost.</div></div>
+    <div class="pcard" style="--accent:#00FF88" onclick="go('views')"><div class="ci">📈</div><div class="new-badge">NEW</div><div class="ct">Daily Views Booster</div><div class="cd">Daily action plan to grow views on videos & Shorts every single day.</div></div>
+    <div class="pcard" style="--accent:#00AAFF" onclick="go('analyzer')"><div class="ci">🔍</div><div class="ct">Video Analyzer</div><div class="cd">Paste title or description — full analysis with fixes to increase views.</div></div>
+    <div class="pcard" style="--accent:#AA55FF" onclick="go('tags')"><div class="ci">🏷️</div><div class="ct">Tags & Keywords</div><div class="cd">Generate viral SEO tags, keywords and hashtags to rank and get discovered.</div></div>
+    <div class="pcard" style="--accent:#FFD700" onclick="go('thumb')"><div class="ci">🖼️</div><div class="ct">Thumbnail Creator</div><div class="cd">Design thumbnails and download instantly. Plus AI strategy tips.</div></div>
+    <div class="pcard" style="--accent:#00FF88" onclick="go('revenue')"><div class="ci">💰</div><div class="ct">Revenue Booster</div><div class="cd">Full revenue audit and day-by-day earning growth plan.</div></div>
+    <div class="pcard" style="--accent:#FF1F1F" onclick="go('viral')"><div class="ci">🚀</div><div class="ct">Go Viral Blueprint</div><div class="cd">Complete viral strategy — hooks, timing, algorithm tricks, promotion plan.</div></div>
+    <div class="pcard" onclick="go('p6')"><div class="ci">🔬</div><div class="ct">Full Channel Audit</div><div class="cd">Deep audit of ROB UNITY POWER with priority action list.</div></div>
+  </div>
+</section>
+
+<!-- CHANNEL STUDIO -->
+<section id="studio" class="sec">
+  <div class="sec-hdr">
+    <div class="sec-tag">NEW · YT STUDIO STYLE</div>
+    <div class="sec-title">CHANNEL <span>STUDIO DASHBOARD</span></div>
+    <div class="sec-sub">Enter your channel stats to see a full dashboard like YouTube Studio — all videos, Shorts, views, and AI suggestions to grow each one.</div>
+  </div>
+
+  <div class="box">
+    <div class="box-label">Channel Overview — Enter Your Stats</div>
+    <div class="input-row" style="margin-bottom:10px;">
+      <div><label class="ctrl-label">Total Channel Views</label><input class="ctrl-input" type="text" id="ch-totalviews" placeholder="e.g. 125000" oninput="updateStudio()"></div>
+      <div><label class="ctrl-label">Subscribers</label><input class="ctrl-input" type="text" id="ch-subs" placeholder="e.g. 2400" oninput="updateStudio()"></div>
+    </div>
+    <div class="input-row" style="margin-bottom:10px;">
+      <div><label class="ctrl-label">Videos Views This Month</label><input class="ctrl-input" type="text" id="ch-vidviews" placeholder="e.g. 18000" oninput="updateStudio()"></div>
+      <div><label class="ctrl-label">Shorts Views This Month</label><input class="ctrl-input" type="text" id="ch-shortviews" placeholder="e.g. 34000" oninput="updateStudio()"></div>
+    </div>
+    <div class="input-row" style="margin-bottom:10px;">
+      <div><label class="ctrl-label">Watch Time (Hours/Month)</label><input class="ctrl-input" type="text" id="ch-watchtime" placeholder="e.g. 850" oninput="updateStudio()"></div>
+      <div><label class="ctrl-label">Avg CTR %</label><input class="ctrl-input" type="text" id="ch-ctr" placeholder="e.g. 4.2" oninput="updateStudio()"></div>
+    </div>
+  </div>
+
+  <!-- STUDIO METRICS -->
+  <div class="yt-studio-grid" id="studioMetrics">
+    <div class="yt-metric" style="--mc:var(--red)"><div class="yt-metric-val" id="sm-totalviews">—</div><div class="yt-metric-label">Total Views</div><div class="yt-metric-change up" id="sm-tv-ch">Enter stats above</div></div>
+    <div class="yt-metric" style="--mc:var(--gold)"><div class="yt-metric-val" id="sm-subs">—</div><div class="yt-metric-label">Subscribers</div><div class="yt-metric-change up" id="sm-sub-ch">—</div></div>
+    <div class="yt-metric" style="--mc:var(--green)"><div class="yt-metric-val" id="sm-vidv">—</div><div class="yt-metric-label">Video Views</div><div class="yt-metric-change" id="sm-vid-ch">This month</div></div>
+    <div class="yt-metric" style="--mc:var(--blue)"><div class="yt-metric-val" id="sm-shortv">—</div><div class="yt-metric-label">Shorts Views</div><div class="yt-metric-change" id="sm-short-ch">This month</div></div>
+    <div class="yt-metric" style="--mc:var(--purple)"><div class="yt-metric-val" id="sm-watch">—</div><div class="yt-metric-label">Watch Time (hrs)</div><div class="yt-metric-change" id="sm-watch-ch">—</div></div>
+    <div class="yt-metric" style="--mc:#FF8800"><div class="yt-metric-val" id="sm-ctr">—</div><div class="yt-metric-label">Avg CTR</div><div class="yt-metric-change" id="sm-ctr-ch">—</div></div>
+  </div>
+
+  <!-- VIDEO LIST -->
+  <div class="box">
+    <div class="box-label">Add Your Videos & Shorts (for per-video analysis)</div>
+    <div id="videoList"></div>
+    <div style="display:flex;gap:8px;margin-top:8px;">
+      <button onclick="addVideoRow('video')" style="flex:1;background:rgba(255,31,31,0.08);border:1px solid rgba(255,31,31,0.2);border-radius:7px;padding:8px;color:var(--red);font-size:11px;font-weight:700;cursor:pointer;letter-spacing:1px;">+ ADD VIDEO</button>
+      <button onclick="addVideoRow('short')" style="flex:1;background:rgba(0,170,255,0.08);border:1px solid rgba(0,170,255,0.2);border-radius:7px;padding:8px;color:var(--blue);font-size:11px;font-weight:700;cursor:pointer;letter-spacing:1px;">+ ADD SHORT</button>
+    </div>
+  </div>
+
+  <div id="studio-video-display"></div>
+
+  <div class="box" style="margin-top:4px;">
+    <div class="box-label">Channel Niche / Description</div>
+    <textarea class="inp" id="input-studio" style="min-height:55px;" placeholder="Describe your channel: niche, type of content, target audience, recent changes..."></textarea>
+  </div>
+  <button class="btn-run gold" onclick="runAI('studio')" id="btn-studio">📊 GENERATE FULL STUDIO ANALYSIS & SUGGESTIONS</button>
+  <div class="out-box" id="out-studio">
+    <div class="out-hdr">
+      <div class="out-tag">📊 Studio Analysis</div>
+      <div class="out-actions"><button class="btn-copy" onclick="copyOut('studio')">COPY</button></div>
+    </div>
+    <div class="out-content" id="text-studio"></div>
+  </div>
+</section>
+
+<!-- VIDEO LINK ANALYZER -->
+<section id="vidlink" class="sec">
+  <div class="sec-hdr">
+    <div class="sec-tag">NEW · LINK ANALYZER</div>
+    <div class="sec-title">VIDEO LINK <span>DEEP ANALYZER</span></div>
+    <div class="sec-sub">Paste your YouTube video or Shorts link. AI will fully analyze it and give you ready-to-use optimized keywords, description, tags, and suggestions to make it go viral in YouTube algorithm.</div>
+  </div>
+
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Paste your YouTube video or Shorts URL</strong> below</div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Tell AI the topic, current views, and problems</strong> you're facing</div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Get full analysis</strong> — viral keywords, copy-ready description, tags, title rewrites, and what to fix right now</div></div>
+  </div>
+
+  <div class="box">
+    <div class="box-label">Paste Your YouTube Video / Shorts Link</div>
+    <div class="link-input-wrap">
+      <input class="link-input" type="url" id="vidlink-url" placeholder="https://youtube.com/watch?v=... or https://youtube.com/shorts/...">
+      <button class="btn-fetch" onclick="previewVidLink()">LOAD ▶</button>
+    </div>
+    <div class="vid-preview" id="vidlink-preview">
+      <div class="vid-url-display" id="vl-url-display"></div>
+      <div class="vid-stats-mini" id="vl-stats-mini"></div>
+    </div>
+
+    <div class="input-row" style="margin-bottom:10px;">
+      <div>
+        <label class="ctrl-label">Video Title (if known)</label>
+        <input class="ctrl-input" type="text" id="vl-title" placeholder="Paste or type your video title">
+      </div>
+      <div>
+        <label class="ctrl-label">Current Views</label>
+        <input class="ctrl-input" type="text" id="vl-views" placeholder="e.g. 450">
+      </div>
+    </div>
+    <div class="input-row" style="margin-bottom:10px;">
+      <div>
+        <label class="ctrl-label">Video Type</label>
+        <select class="ctrl-input" id="vl-type">
+          <option>Long Video</option>
+          <option>YouTube Short</option>
+        </select>
+      </div>
+      <div>
+        <label class="ctrl-label">Days Since Upload</label>
+        <input class="ctrl-input" type="text" id="vl-days" placeholder="e.g. 7">
+      </div>
+    </div>
+    <div class="box-label">Current Description (paste it here for analysis)</div>
+    <textarea class="inp" id="vl-desc" style="min-height:80px;" placeholder="Paste your current video description here so AI can analyze and rewrite it for maximum SEO and virality..."></textarea>
+    <div class="box-label" style="margin-top:10px;">Current Tags (paste them here)</div>
+    <textarea class="inp" id="vl-tags" style="min-height:40px;" placeholder="gaming, bgmi tips, rank push, ..."></textarea>
+    <div class="box-label" style="margin-top:10px;">What problem are you facing with this video?</div>
+    <textarea class="inp" id="vl-problem" style="min-height:50px;" placeholder="E.g. Not showing in search, very low views despite good content, shorts not going viral, algorithm not pushing..."></textarea>
+  </div>
+
+  <button class="btn-run blue" onclick="runAI('vidlink')" id="btn-vidlink">🔗 ANALYZE VIDEO & GET VIRAL PACKAGE</button>
+  <div class="out-box" id="out-vidlink">
+    <div class="out-hdr">
+      <div class="out-tag">🔗 Video Analysis + Viral Package</div>
+      <div class="out-actions">
+        <button class="btn-copy" onclick="copyOut('vidlink')">COPY ALL</button>
+      </div>
+    </div>
+    <div class="out-content" id="text-vidlink"></div>
+    <div id="vl-tag-pills" class="tags-wrap"></div>
+  </div>
+</section>
+
+<!-- DAILY VIEWS -->
+<section id="views" class="sec">
+  <div class="sec-hdr">
+    <div class="sec-tag">DAILY GROWTH</div>
+    <div class="sec-title">DAILY VIEWS <span>BOOSTER</span></div>
+    <div class="sec-sub">Get a custom daily action plan to increase views on videos & Shorts every single day.</div>
+  </div>
+  <div class="stats-row">
+    <div class="stat-card"><div class="stat-num" id="sv-views">0</div><div class="stat-label">Daily Views</div></div>
+    <div class="stat-card"><div class="stat-num" id="sv-subs">0</div><div class="stat-label">Subscribers</div></div>
+    <div class="stat-card"><div class="stat-num" id="sv-vids">0</div><div class="stat-label">Total Videos</div></div>
+  </div>
+  <div class="box">
+    <div class="input-row" style="margin-bottom:10px;">
+      <div><label class="ctrl-label">Current Daily Views</label><input class="ctrl-input" type="number" id="v-views" placeholder="e.g. 500" oninput="updateStats()"></div>
+      <div><label class="ctrl-label">Subscribers</label><input class="ctrl-input" type="number" id="v-subs" placeholder="e.g. 1200" oninput="updateStats()"></div>
+    </div>
+    <div class="input-row" style="margin-bottom:10px;">
+      <div><label class="ctrl-label">Total Videos</label><input class="ctrl-input" type="number" id="v-vids" placeholder="e.g. 25" oninput="updateStats()"></div>
+      <div><label class="ctrl-label">Upload Frequency</label><select class="ctrl-input" id="v-freq"><option>Daily</option><option>3x per week</option><option>2x per week</option><option>Weekly</option><option>Irregular</option></select></div>
+    </div>
+    <div class="box-label">Describe Your Channel</div>
+    <textarea class="inp" id="input-views" placeholder="E.g. My channel ROB UNITY POWER posts gaming videos and Shorts. I want to reach [goal] views/day..."></textarea>
+  </div>
+  <button class="btn-run green" onclick="runAI('views')" id="btn-views">📈 GENERATE DAILY GROWTH PLAN</button>
+  <div class="out-box" id="out-views">
+    <div class="out-hdr"><div class="out-tag">📈 Daily Growth Plan</div><div class="out-actions"><button class="btn-copy" onclick="copyOut('views')">COPY</button></div></div>
+    <div class="out-content" id="text-views"></div>
+  </div>
+</section>
+
+<!-- VIDEO ANALYZER -->
+<section id="analyzer" class="sec">
+  <div class="sec-hdr">
+    <div class="sec-tag">VIDEO ANALYSIS</div>
+    <div class="sec-title">VIDEO & SHORTS <span>ANALYZER</span></div>
+    <div class="sec-sub">Paste your video title, URL, or description — AI gives you a full report with what to fix to increase views and watch time.</div>
+  </div>
+  <div class="box">
+    <div class="box-label">Video Type</div>
+    <div style="display:flex;gap:12px;margin-bottom:12px;flex-wrap:wrap;">
+      <label style="display:flex;align-items:center;gap:5px;cursor:pointer;font-size:12px;color:#aaa;"><input type="radio" name="vtype" value="video" checked style="accent-color:var(--red);"> Long Video</label>
+      <label style="display:flex;align-items:center;gap:5px;cursor:pointer;font-size:12px;color:#aaa;"><input type="radio" name="vtype" value="shorts" style="accent-color:var(--red);"> YouTube Short</label>
+      <label style="display:flex;align-items:center;gap:5px;cursor:pointer;font-size:12px;color:#aaa;"><input type="radio" name="vtype" value="both" style="accent-color:var(--red);"> Both</label>
+    </div>
+    <div class="box-label">Video Title / URL / Description</div>
+    <textarea class="inp" id="input-analyzer" style="min-height:90px;" placeholder="Paste your video title, URL, or full description here. You can paste multiple videos.&#10;&#10;E.g. Video: 'Top 10 Gaming Tips' - 500 views, 2 min avg watch time"></textarea>
+    <div class="box-label" style="margin-top:10px;">Main Problem You're Facing</div>
+    <textarea class="inp" id="input-analyzer2" style="min-height:45px;" placeholder="E.g. Low click rate, people not watching full video, not showing in search..."></textarea>
+  </div>
+  <button class="btn-run blue" onclick="runAI('analyzer')" id="btn-analyzer">🔍 ANALYZE MY VIDEOS</button>
+  <div class="out-box" id="out-analyzer">
+    <div class="out-hdr"><div class="out-tag">🔍 Video Analysis</div><div class="out-actions"><button class="btn-copy" onclick="copyOut('analyzer')">COPY</button></div></div>
+    <div class="out-content" id="text-analyzer"></div>
+  </div>
+</section>
+
+<!-- TAGS -->
+<section id="tags" class="sec">
+  <div class="sec-hdr">
+    <div class="sec-tag">SEO & KEYWORDS</div>
+    <div class="sec-title">TAGS & <span>KEYWORDS</span> GENERATOR</div>
+    <div class="sec-sub">Generate viral SEO tags, keywords, hashtags and title formulas that make YouTube push your video.</div>
+  </div>
+  <div class="box">
+    <div class="box-label">Video Topic / Title</div>
+    <textarea class="inp" id="input-tags" style="min-height:55px;" placeholder="E.g. How to rank up in BGMI fast, Best gaming setup under 5000 rupees..."></textarea>
+    <div class="input-row" style="margin-top:10px;">
+      <div><label class="ctrl-label">Content Type</label><select class="ctrl-input" id="tags-type"><option>Gaming Video</option><option>YouTube Short</option><option>Tutorial</option><option>Vlog</option><option>Tech Review</option><option>Motivational</option><option>Other</option></select></div>
+      <div><label class="ctrl-label">Target Audience</label><select class="ctrl-input" id="tags-aud"><option>Indian Audience (Hindi)</option><option>Indian Audience (English)</option><option>Global English</option><option>Mixed</option></select></div>
+    </div>
+  </div>
+  <button class="btn-run purple" onclick="runAI('tags')" id="btn-tags">🏷️ GENERATE VIRAL TAGS & KEYWORDS</button>
+  <div class="out-box" id="out-tags">
+    <div class="out-hdr"><div class="out-tag">🏷️ SEO Package</div><div class="out-actions"><button class="btn-copy" onclick="copyOut('tags')">COPY ALL</button></div></div>
+    <div class="out-content" id="text-tags"></div>
+    <div id="tags-pills" class="tags-wrap"></div>
+  </div>
+</section>
+
+<!-- THUMBNAIL -->
+<section id="thumb" class="sec">
+  <div class="sec-hdr">
+    <div class="sec-tag">THUMBNAIL STUDIO</div>
+    <div class="sec-title">THUMBNAIL <span>CREATOR PRO</span></div>
+    <div class="sec-sub">Upload your photo, design a pro YouTube thumbnail with game themes & effects, download at 1280×720. High CTR guaranteed.</div>
+  </div>
+
+  <!-- IMAGE UPLOAD -->
+  <div class="box">
+    <div class="box-label">📸 Upload Your Photo / Image (Optional)</div>
+    <div id="th-upload-zone" style="border:2px dashed #2a2a2a;border-radius:10px;padding:18px;text-align:center;cursor:pointer;transition:all 0.2s;position:relative;margin-bottom:10px;">
+      <input type="file" accept="image/*" id="th-img-input" style="position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;" onchange="thLoadImage(event)">
+      <div style="font-size:28px;margin-bottom:6px;">📷</div>
+      <div style="font-size:13px;color:#FF1F1F;font-weight:700;margin-bottom:4px;">Click or Drag Image Here</div>
+      <div style="font-size:11px;color:#555;">Upload face photo, game screenshot — placed on thumbnail automatically</div>
+    </div>
+    <img id="th-img-preview" style="width:100%;max-height:80px;object-fit:cover;border-radius:6px;display:none;border:1px solid #2a2a2a;margin-bottom:8px;">
+    <div id="th-img-controls" style="display:none;">
+      <div class="input-row" style="margin-bottom:8px;">
+        <div><label class="ctrl-label">Image Side</label>
+          <select class="ctrl-input" id="th-img-side" onchange="thDraw()">
+            <option value="right">Right Side</option>
+            <option value="left">Left Side</option>
+            <option value="center">Center</option>
+            <option value="fill">Fill Background</option>
+          </select>
+        </div>
+        <div><label class="ctrl-label">Image Scale %</label>
+          <input type="range" id="th-img-scale" min="30" max="250" value="100" oninput="thDraw()" style="width:100%;accent-color:var(--red);margin-top:8px;">
+        </div>
+      </div>
+      <button onclick="thRemoveImage()" style="background:rgba(255,31,31,0.1);border:1px solid rgba(255,31,31,0.2);border-radius:6px;padding:6px 14px;color:var(--red);font-size:11px;font-weight:700;cursor:pointer;letter-spacing:1px;">✕ Remove Image</button>
+    </div>
+  </div>
+
+  <!-- THEME SELECTION -->
+  <div class="box">
+    <div class="box-label">🎮 Game / Content Theme</div>
+    <div id="th-theme-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:6px;margin-bottom:14px;"></div>
+
+    <div class="box-label">🎬 Layout Style</div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px;">
+      <button class="th-lbtn active" onclick="thSetLayout('fire')" data-l="fire">🔥 Fire</button>
+      <button class="th-lbtn" onclick="thSetLayout('cyber')" data-l="cyber">💻 Cyber</button>
+      <button class="th-lbtn" onclick="thSetLayout('split')" data-l="split">⚡ Split</button>
+      <button class="th-lbtn" onclick="thSetLayout('glitch')" data-l="glitch">💥 Glitch</button>
+      <button class="th-lbtn" onclick="thSetLayout('gold')" data-l="gold">👑 Gold</button>
+      <button class="th-lbtn" onclick="thSetLayout('clean')" data-l="clean">◼ Clean</button>
+    </div>
+
+    <div class="thumb-controls" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+      <div><label class="ctrl-label">Main Title</label><input class="ctrl-input" id="th-title" type="text" value="RANK PUSH" oninput="thDraw()"></div>
+      <div><label class="ctrl-label">Sub Text</label><input class="ctrl-input" id="th-sub" type="text" value="CONQUEROR IN 7 DAYS" oninput="thDraw()"></div>
+      <div><label class="ctrl-label">Badge / Number</label><input class="ctrl-input" id="th-num" type="text" value="TOP 1%" oninput="thDraw()" maxlength="8"></div>
+      <div><label class="ctrl-label">Channel Name</label><input class="ctrl-input" id="th-channel" type="text" value="ROB UNITY POWER" oninput="thDraw()"></div>
+      <div><label class="ctrl-label">Accent Color</label><input type="color" id="th-accent" value="#FF1F1F" oninput="thDraw()" style="width:100%;height:34px;border:1px solid #2a2a2a;border-radius:6px;background:#111;cursor:pointer;padding:2px;"></div>
+      <div><label class="ctrl-label">Text Color</label><input type="color" id="th-textcol" value="#FFFFFF" oninput="thDraw()" style="width:100%;height:34px;border:1px solid #2a2a2a;border-radius:6px;background:#111;cursor:pointer;padding:2px;"></div>
+    </div>
+  </div>
+
+  <!-- CANVAS PREVIEW -->
+  <div class="box" style="padding:10px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:6px;">
+      <div class="box-label" style="margin:0;">🖼️ LIVE PREVIEW — 1280×720</div>
+      <div style="display:flex;gap:6px;">
+        <button onclick="thRandomize()" style="background:rgba(170,85,255,0.1);border:1px solid rgba(170,85,255,0.3);border-radius:6px;padding:5px 12px;color:#AA55FF;font-size:10px;font-weight:700;cursor:pointer;font-family:Space Mono,monospace;letter-spacing:1px;">🎲 RANDOM</button>
+        <button onclick="thDownload()" style="background:linear-gradient(135deg,#a07010,#FFD700);border:none;border-radius:6px;padding:5px 14px;color:#000;font-size:10px;font-weight:700;cursor:pointer;font-family:Space Mono,monospace;letter-spacing:1px;">⬇️ DOWNLOAD PNG</button>
+      </div>
+    </div>
+    <div style="background:#000;border-radius:8px;overflow:hidden;">
+      <canvas id="thumbCanvas" width="1280" height="720" style="width:100%;height:auto;display:block;"></canvas>
+    </div>
+  </div>
+
+  <!-- 4 VARIATIONS -->
+  <div class="box">
+    <div class="box-label">⚡ Generate 4 Variations</div>
+    <button onclick="thVariations()" style="width:100%;background:linear-gradient(135deg,#220044,#AA55FF);border:none;border-radius:8px;padding:12px;color:#fff;font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:3px;cursor:pointer;margin-bottom:10px;">⚡ GENERATE 4 VARIATIONS</button>
+    <div id="th-var-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;"></div>
+  </div>
+
+  <div class="box"><div class="box-label">AI High-CPM Thumbnail Strategy</div>
+  <textarea class="inp" id="input-thumb" style="min-height:55px;" placeholder="Describe your video: game name, topic, target emotion..."></textarea></div>
+  <button class="btn-run gold" onclick="runAI('thumb')" id="btn-thumb">✨ GET AI HIGH-CPM THUMBNAIL TIPS</button>
+  <div class="out-box" id="out-thumb">
+    <div class="out-hdr"><div class="out-tag">✨ High-CPM Strategy</div><div class="out-actions"><button class="btn-copy" onclick="copyOut('thumb')">COPY</button></div></div>
+    <div class="out-content" id="text-thumb"></div>
+  </div>
+</section>
+
+<!-- REVENUE -->
+<section id="revenue" class="sec">
+  <div class="sec-hdr">
+    <div class="sec-tag">MONETIZATION</div>
+    <div class="sec-title">REVENUE <span>BOOSTER</span> & AUDIT</div>
+    <div class="sec-sub">Full revenue audit — find every problem reducing earnings and get a day-by-day plan to grow revenue higher and higher.</div>
+  </div>
+  <div class="box">
+    <div class="box-label">Monetization Active</div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;">
+      <label style="display:flex;align-items:center;gap:5px;cursor:pointer;font-size:11px;color:#aaa;"><input type="checkbox" id="rev-adsense" style="accent-color:var(--red);"> AdSense / YPP</label>
+      <label style="display:flex;align-items:center;gap:5px;cursor:pointer;font-size:11px;color:#aaa;"><input type="checkbox" id="rev-shorts" style="accent-color:var(--red);"> Shorts Fund</label>
+      <label style="display:flex;align-items:center;gap:5px;cursor:pointer;font-size:11px;color:#aaa;"><input type="checkbox" id="rev-member" style="accent-color:var(--red);"> Memberships</label>
+      <label style="display:flex;align-items:center;gap:5px;cursor:pointer;font-size:11px;color:#aaa;"><input type="checkbox" id="rev-super" style="accent-color:var(--red);"> Super Thanks</label>
+      <label style="display:flex;align-items:center;gap:5px;cursor:pointer;font-size:11px;color:#aaa;"><input type="checkbox" id="rev-sponsor" style="accent-color:var(--red);"> Sponsors</label>
+      <label style="display:flex;align-items:center;gap:5px;cursor:pointer;font-size:11px;color:#aaa;"><input type="checkbox" id="rev-affiliate" style="accent-color:var(--red);"> Affiliate</label>
+    </div>
+    <div class="input-row" style="margin-bottom:10px;">
+      <div><label class="ctrl-label">Monthly Views</label><input class="ctrl-input" type="text" id="r-views" placeholder="e.g. 50000"></div>
+      <div><label class="ctrl-label">Current Monthly Revenue</label><input class="ctrl-input" type="text" id="r-revenue" placeholder="e.g. ₹500"></div>
+    </div>
+    <div class="input-row" style="margin-bottom:10px;">
+      <div><label class="ctrl-label">Watch Time (hrs/month)</label><input class="ctrl-input" type="text" id="r-watch" placeholder="e.g. 500"></div>
+      <div><label class="ctrl-label">Channel Niche</label><input class="ctrl-input" type="text" id="r-niche" placeholder="e.g. Gaming, Tech"></div>
+    </div>
+    <div class="box-label">Problems / Goals</div>
+    <textarea class="inp" id="input-revenue" style="min-height:60px;" placeholder="E.g. My RPM is very low, I'm not monetized yet, I want ₹10,000/month, Shorts not earning..."></textarea>
+  </div>
+  <button class="btn-run green" onclick="runAI('revenue')" id="btn-revenue">💰 FULL REVENUE AUDIT & BOOST PLAN</button>
+  <div class="out-box" id="out-revenue">
+    <div class="out-hdr"><div class="out-tag">💰 Revenue Report</div><div class="out-actions"><button class="btn-copy" onclick="copyOut('revenue')">COPY</button></div></div>
+    <div class="out-content" id="text-revenue"></div>
+  </div>
+</section>
+
+<!-- GO VIRAL -->
+<section id="viral" class="sec">
+  <div class="sec-hdr">
+    <div class="sec-tag">VIRAL STRATEGY</div>
+    <div class="sec-title">GO <span>VIRAL</span> BLUEPRINT</div>
+    <div class="sec-sub">Complete viral strategy — timing, algorithm tricks, promotion, hook writing, everything to explode views.</div>
+  </div>
+  <div class="box">
+    <div class="input-row" style="margin-bottom:10px;">
+      <div><label class="ctrl-label">Video Title</label><input class="ctrl-input" type="text" id="vir-title" placeholder="Your video title"></div>
+      <div><label class="ctrl-label">Video Type</label><select class="ctrl-input" id="vir-type"><option>Long Video (5-20 min)</option><option>YouTube Short</option><option>Live Stream</option></select></div>
+    </div>
+    <div class="box-label">Describe the Video</div>
+    <textarea class="inp" id="input-viral" style="min-height:70px;" placeholder="Describe what the video is about, current views, your hook (first 15 seconds), niche..."></textarea>
+  </div>
+  <button class="btn-run" onclick="runAI('viral')" id="btn-viral">🚀 GENERATE VIRAL BLUEPRINT</button>
+  <div class="out-box" id="out-viral">
+    <div class="out-hdr"><div class="out-tag">🚀 Viral Blueprint</div><div class="out-actions"><button class="btn-copy" onclick="copyOut('viral')">COPY</button></div></div>
+    <div class="out-content" id="text-viral"></div>
+  </div>
+</section>
+
+<!-- P1 NICHE -->
+<section id="p1" class="sec">
+  <div class="sec-hdr"><div class="sec-tag">PROMPT 01</div><div class="sec-title">HIGH-VELOCITY <span>NICHE FINDER</span></div><div class="sec-sub">Finds under-served niches where view demand is growing faster than creator supply.</div></div>
+  <div class="box"><div class="sys-preview">Act as a YouTube growth strategist. Generate a list of high-velocity YouTube niches suitable for faceless channels that are currently under-served...</div>
+  <div class="box-label">Your Focus / Interests (optional)</div>
+  <textarea class="inp" id="input-p1" placeholder="E.g. I'm interested in gaming, tech content for Indian audience..."></textarea></div>
+  <button class="btn-run" onclick="runAI('p1')" id="btn-p1">⚡ GENERATE NICHES</button>
+  <div class="out-box" id="out-p1"><div class="out-hdr"><div class="out-tag">🎯 Niche Analysis</div><div class="out-actions"><button class="btn-copy" onclick="copyOut('p1')">COPY</button></div></div><div class="out-content" id="text-p1"></div></div>
+</section>
+
+<!-- P2 IDEAS -->
+<section id="p2" class="sec">
+  <div class="sec-hdr"><div class="sec-tag">PROMPT 02</div><div class="sec-title">30 VIRAL <span>VIDEO IDEAS</span></div><div class="sec-sub">30 ideas with viral mechanics, working titles, hooks and emotional triggers.</div></div>
+  <div class="box"><div class="sys-preview">Generate 30 viral-designed video ideas for a faceless YouTube channel built around proven viral mechanics...</div>
+  <div class="box-label">Your Niche / Topic</div>
+  <textarea class="inp" id="input-p2" placeholder="E.g. Gaming tips for Indian audience..."></textarea></div>
+  <button class="btn-run" onclick="runAI('p2')" id="btn-p2">⚡ GENERATE 30 IDEAS</button>
+  <div class="out-box" id="out-p2"><div class="out-hdr"><div class="out-tag">💡 30 Ideas</div><div class="out-actions"><button class="btn-copy" onclick="copyOut('p2')">COPY</button></div></div><div class="out-content" id="text-p2"></div></div>
+</section>
+
+<!-- P5 COMPETITORS -->
+<section id="p5" class="sec">
+  <div class="sec-hdr"><div class="sec-tag">PROMPT 05</div><div class="sec-title">COMPETITOR <span>INTELLIGENCE</span></div><div class="sec-sub">Deep analysis of competitors to find gaps and opportunities.</div></div>
+  <div class="box"><div class="sys-preview">Act as a YouTube competitive intelligence analyst. Analyze the top-performing competitors in this niche...</div>
+  <div class="box-label">List Competitors / Niche</div>
+  <textarea class="inp" id="input-p5" placeholder="E.g. Top competitors: Channel A, Channel B. ROB UNITY POWER focuses on..."></textarea></div>
+  <button class="btn-run" onclick="runAI('p5')" id="btn-p5">⚡ ANALYZE COMPETITORS</button>
+  <div class="out-box" id="out-p5"><div class="out-hdr"><div class="out-tag">🕵️ Competitor Report</div><div class="out-actions"><button class="btn-copy" onclick="copyOut('p5')">COPY</button></div></div><div class="out-content" id="text-p5"></div></div>
+</section>
+
+<!-- P6 AUDIT -->
+<section id="p6" class="sec">
+  <div class="sec-hdr"><div class="sec-tag">CHANNEL AUDIT</div><div class="sec-title">FULL CHANNEL <span>AUDIT</span></div><div class="sec-sub">Complete optimization audit — branding, SEO, CTR, retention, priority growth actions.</div></div>
+  <div class="box"><div class="sys-preview">Act as a YouTube growth and optimization expert. Perform a deep audit of ROB UNITY POWER (https://youtube.com/@sniperrob007)...</div>
+  <div class="box-label">Additional Context</div>
+  <textarea class="inp" id="input-p6" placeholder="Add context about recent performance, goals, target audience..."></textarea></div>
+  <button class="btn-run" onclick="runAI('p6')" id="btn-p6">⚡ AUDIT MY CHANNEL</button>
+  <div class="out-box" id="out-p6"><div class="out-hdr"><div class="out-tag">🔬 Channel Audit</div><div class="out-actions"><button class="btn-copy" onclick="copyOut('p6')">COPY</button></div></div><div class="out-content" id="text-p6"></div></div>
+</section>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
