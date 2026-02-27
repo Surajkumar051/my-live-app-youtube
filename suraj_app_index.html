@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Suraj Live App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: white;
+            color: #333;
+        }
+        button:hover {
+            background-color: #222;
+            color: white;
+        }
+        footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🚀 Welcome to Suraj's App</h1>
+    <p>Your app is ready to go live on GitHub Pages!</p>
+    <button onclick="showMessage()">Click Me</button>
+    <h2 id="message"></h2>
+</div>
+
+<footer>
+    © 2026 Suraj Kumar | Hosted Free on GitHub Pages
+</footer>
+
+<script>
+function showMessage() {
+    document.getElementById("message").innerHTML = "🎉 App Working Successfully!";
+}
+</script>
+
+</body>
+</html>
